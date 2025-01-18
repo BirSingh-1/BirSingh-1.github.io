@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-image: url("https://plus.unsplash.com/premium_photo-1701608792519-1f799c3ee5c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fGdyYWRpZW50JTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .navbar {
+        background: rgb(220, 82, 82);
+        height: 90px;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar .left {
+        width: 50%;
+    }
+
+    .navbar .right {
+        width: 50%;
+    }
+
+    .left img {
+        height: 94px;
+        width: 94px;
+    }
+
+    .right ul {
+        justify-content: right;
+        display: flex;
+        margin-right: 20px;
+    }
+    
+    .right ul li {
+        list-style: none;
+        font-size: 27px;
+        color: rgb(250, 181, 92);
+        font-weight: bold;
+        
+    }
+    .right ul a li:hover{
+        color: rgb(251, 167, 58);
+        font-size: 28px;
+    }
+    .navbar a{
+        text-decoration: none;
+        padding: 5px 5px;
+        margin: 0 25px;
+    }
+
+    main .one {
+        display: flex;
+        /* padding: 20px 20px; */
+    }
+
+    main .one div {
+        width: 50%;
+        height: 550px;
+    }
+
+    main .left {
+        background-image: url("output-onlinepngtools.png");
+        background-position-x: center;
+        background-position-y: center;
+        background-size: 39rem 32rem;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        text-align: center;
+        background-color: rgba((255), 255, 255, 0.5);
+        /* font-family: "Poppins", serif;
+        font-weight: 500;
+        font-style: italic; */
+        font-family: 'Roboto Slab', serif;
+        font-weight: 700;
+        color: rgb(254, 120, 2);
+    }
+
+    main .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .right img {
+        height: 90%;
+        width: 90%;
+    }
+
+    main hr {
+        border: 0;
+        background: rebeccapurple;
+        height: 2px;
+        margin: 0 5%;
+    }
+
+    main .two {
+        padding: 40px 40px;
+    }
+
+    .two span {
+        font-size: x-large;
+        font-family: "Poppins", serif;
+        /* font-weight: 500; */
+        font-style: italic;
+    }
+    
+    main .three {
+        padding: 40px 40px;
+    }
+
+    .three div {
+        font-size: x-large;
+        font-family: "Poppins", serif;
+        /* font-weight: 500; */
+        font-style: italic;
+    }
+
+    
+    .test {
+        display: flex;
+
+    }
+
+    .threeleft{
+        width: 50%;
+        text-align: center;
+
+    }
+
+    .threeright{
+        width: 50%;
+        text-align: center;
+    }
+
+    .four{
+        padding: 40px 40px;
+        height: 120px;
+    }
+
+
+    .four div {
+        font-size: x-large;
+        font-family: "Poppins", serif;
+        /* font-weight: 500; */
+        font-style: italic;
+        text-align: center;
+    }
+
+    button a{
+        color: rgb(17, 6, 242);
+        text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+        .navbar .left{
+            display: none;
+        }
+        .navbar {
+            width: 100%;
+            justify-content: center;
+        }
+        .navbar .right ul {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar .right ul a{
+            margin: 0 30px;
+        }
+        .navbar .right ul li{
+            font-size: xx-large;
+        }
+        .one {
+            flex-direction: column;
+            
+        }
+
+        .one > .left {
+            width: 100%;
+            height: 50vh;
+        }
+        .one > .right {
+            width: 100%;
+            align-items: center;
+        }
+        main h1{
+            text-align: center;
+            text-wrap: wrap;
+        }
+        .two {
+            text-align: center;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB8Ene6Ai0v_cpUlhzJhmS4ph1iTGAAUjlWg&s">
+            </div>
+            <div class="right">
+                <ul>
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#about"><li>About Us</li></a>
+                    <a href="#contact"><li>Contact Us</li></a>
+                    <a href="#location"><li>Location</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="one" id="home">
+            <div class="left">  
+                SIMARJEET TEXTILES <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;& <br> PAGRI CENTRE
+            </div>
+            <div class="right">
+                <img src="D:\WEB DEV\Shop\WhatsApp Image 2025-01-18 at 11.35.02_ca357eb4.jpg" alt="">
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section id="about" class="two">
+            <h1 style="font-size: 40px">
+                About US
+            </h1>
+            <br>
+            <span>
+                <b>Since 1994</b>,&nbsp;&nbsp;&nbsp;&nbsp;
+                We are proud to offer an extensive range of premium-quality products designed to meet diverse customer
+                needs and preferences. Our collection includes exquisite <b>Ladies' Suits</b> that combine elegance and
+                comfort, perfect for both casual and formal occasions. We also specialize in vibrant <b>Chemical-dyed
+                    Turbans</b>, available in a variety of rich colors and patterns, ideal for those who appreciate
+                traditional
+                craftsmanship with a modern touch. Our <b>Boutique Items</b> are curated to bring you unique and stylish
+                pieces that stand out in any wardrobe. Additionally, we provide a wide selection of <b>Readymade
+                    Shirts</b> and
+                <b>Traditional Kurta Pyjamas</b>, catering to both contemporary and classic tastes. Whether you're
+                looking for daily wear or something special, our products are crafted with care to deliver quality,
+                style, and
+                satisfaction.
+            </span>
+        </section>
+        <hr style="height: 3px">
+        <section class="three" id="contact">
+            <h1 style="font-size: 40px">
+                Contact Us
+            </h1>
+            <br>
+            <div class="test">
+                <div class="threeleft">
+                    <b>Tarantej Singh</b>
+                    <br>
+                    +91-9815060580
+                </div>
+    
+                <div class="threeright">
+                    <b>Mahinder Pal Singh</b>
+                    <br>
+                    +91-9041439555
+                    <br>
+                    +91-9815039555
+                </div>
+            </div>
+            
+
+        </section>
+        <hr>
+
+        <section class="four" id="location">
+            <h1 style="font-size: 40px">
+                Location
+            </h1>
+            <div>
+                SSS 101 Simarjeet Textiles Phase-9 Mohali
+                <br>
+                <button style="border: 2px solid rgb(210, 11, 60); height: 50px; width: 200px; font-size: medium; margin-top: 10px; background-color:rgba(17, 153, 171, 0.378); border-radius: 5px;">
+                    <a href="https://maps.app.goo.gl/N2dqaw2h7mKcv6fv7" target="_blank"><b>Click to get google location</b></a>
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
